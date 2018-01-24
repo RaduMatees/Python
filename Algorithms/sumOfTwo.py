@@ -1,4 +1,4 @@
 def sumOfTwo(a, b):
     return a + b
 
-print(sumOfTwo(2, 3))
+print(sumOfTwo(2, 4))
