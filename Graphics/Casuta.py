@@ -1,0 +1,41 @@
+from graphics import *
+
+def main():
+    win = GraphWin("Casa mea", 200, 320)
+    a = Point(50, 260)
+    b = Point(150, 260)
+    c = Point(50, 110)
+    d = Point(150, 110)
+    e = Point(100, 60)
+
+    Line_ab = Line(a, b)
+    Line_ab.setOutline('blue')
+    Line_ab.draw(win)
+    Line_cd = Line(c, d)
+    Line_cd.setOutline('blue')
+    Line_cd.draw(win)
+    Line_ac = Line(a, c)
+    Line_ac.setOutline('blue')
+    Line_ac.draw(win)
+    Line_bd = Line(b, d)
+    Line_bd.setOutline('blue')
+    Line_bd.draw(win)
+    Line_ce = Line(c, e)
+    Line_ce.setOutline('red')
+    Line_ce.draw(win)
+    Line_de = Line(d , e)
+    Line_de.setOutline('red')
+    Line_de.setWidth(5)
+    Line_de.draw(win)
+    t = Text(Point(100, 30), "Casuta de turta dulce")
+    t.draw(win)
+
+    f = Circle(Point(100, 60), 5)
+    f.setOutline('purple')
+    f.setFill('purple')
+    f.draw(win)
+
+    win.getMouse()
+    win.close()
+
+main()
